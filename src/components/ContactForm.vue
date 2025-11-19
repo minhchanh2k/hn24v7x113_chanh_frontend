@@ -40,6 +40,29 @@
       />
       <ErrorMessage name="phone" class="error-feedback" />
     </div>
+    <!-- Thêm vào ContactForm.vue -->
+    
+    <div class="form-group">
+      <label for="gender">Giới tính</label>
+      <Field
+        name="gender"
+        type="text"
+        class="form-control"
+        v-model="contactLocal.gender"
+      />
+      <ErrorMessage name="gender" class="error-feedback" />
+    </div>
+
+    <div class="form-group">
+      <label for="hobbies">Sở thích</label>
+      <Field
+        name="hobbies"
+        type="text"
+        class="form-control"
+        v-model="contactLocal.hobbies"
+      />
+      <ErrorMessage name="hobbies" class="error-feedback" />
+    </div>
     <div class="form-group form-check">
       <input
         name="favorite"
